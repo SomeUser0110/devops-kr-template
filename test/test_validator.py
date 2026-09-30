@@ -1,3 +1,5 @@
+from validator import validate_phone, validate_email, validate_snils
+
 def test_validate_phone():
  assert validate_phone("+79991234567") == True
  assert validate_phone("89991234567") == False
@@ -12,7 +14,7 @@ def test_validate_email():
 def test_validate_snils():
     # Валидные СНИЛС (рассчитаны по алгоритму)
     assert validate_snils("11223344595") == True
-    assert validate_snils("001-001-999 32") == True  # с форматированием
+    assert validate_snils("001-001-999 65") == True  # с форматированием
     
     # Невалидные: неверный формат
     assert validate_snils("123") == False              # слишком короткий
