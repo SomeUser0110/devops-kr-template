@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 def validate_phone(phone: str) -> bool:
  """Валидация российского номера телефона. :)"""
  import re
  pattern = r'^\+?7\d{10}$'
  return bool(re.match(pattern, phone.replace('-', '').replace(' ', '')))
-=======
+
 # validator.py
 def validate_email(email: str) -> bool:
     """Валидация email-адреса."""
@@ -44,4 +43,3 @@ def validate_snils(snils: str) -> bool:
         expected = calculated % 101
     
     return expected == check_sum
->>>>>>> upstream/feature/instructor-change
