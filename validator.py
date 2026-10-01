@@ -37,3 +37,5 @@ def validate_snils(snils: str) -> bool:
         expected = calculated % 101
     
     return expected == check_sum
+
+def validate_snils(snils: str) -> bool:
